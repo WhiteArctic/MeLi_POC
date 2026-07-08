@@ -64,6 +64,8 @@ El repositorio no versiona datasets, modelos entrenados ni documentos generados 
 
 Los manifiestos, metricas `.json`, scripts y codigo fuente si quedan versionados para poder regenerar los artefactos.
 
+Para reproducir el proyecto desde un clone limpio, revisa [docs/reproducibility.md](docs/reproducibility.md).
+
 Validar codigo rapido:
 
 ```bash
@@ -127,7 +129,7 @@ PYTHONPATH=src .venv-ocr/bin/python scripts/evaluate_end_to_end.py --preset cand
 Entrenar modelo visual liviano:
 
 ```bash
-/Users/O001224/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 scripts/train_visual_model.py --rows-per-class 500 --validation-rows-per-class 200 --output-json outputs/reports/visual_model_validation.json
+python scripts/train_visual_model.py --rows-per-class 500 --validation-rows-per-class 200 --output-json outputs/reports/visual_model_validation.json
 ```
 
 Entrenar fusion visual con MobileNetV3 preentrenado:

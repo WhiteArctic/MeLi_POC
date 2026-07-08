@@ -1,12 +1,21 @@
-PYTHON ?= /Users/O001224/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3
+PYTHON ?= python3
 OCR_PYTHON ?= .venv-ocr/bin/python
 
-.PHONY: setup-candidate test smoke validate-candidate
+.PHONY: setup setup-candidate build-datasets train-model test smoke validate-candidate
+
+setup:
+	$(PYTHON) -m pip install -e .
 
 setup-candidate:
-	python -m venv .venv-ocr
+	$(PYTHON) -m venv .venv-ocr
 	$(OCR_PYTHON) -m pip install -U pip
 	$(OCR_PYTHON) -m pip install -e ".[candidate]"
+
+build-datasets:
+	PYTHONPATH=src $(PYTHON) scripts/build_datasets.py
+
+train-model:
+	PYTHONPATH=src $(PYTHON) scripts/train_model.py
 
 test:
 	PYTHONPATH=src $(PYTHON) -m unittest discover -s tests -v
