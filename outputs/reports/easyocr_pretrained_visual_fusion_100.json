@@ -1,0 +1,16 @@
+{
+  "threshold": 0.91,
+  "metrics": {
+    "tp": 42,
+    "fp": 2,
+    "tn": 48,
+    "fn": 8,
+    "precision": 0.9545454545454546,
+    "recall": 0.84,
+    "f1": 0.8936170212765958,
+    "accuracy": 0.9
+  },
+  "base_easyocr_report": "outputs/reports/end_to_end_validation_100_unique_easyocr.json",
+  "visual_report": "outputs/reports/pretrained_visual_validation_500.json",
+  "rows": 100
+}

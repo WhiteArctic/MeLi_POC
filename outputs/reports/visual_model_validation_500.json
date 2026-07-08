@@ -1,0 +1,17 @@
+{
+  "model_path": "/Users/O001224/Desktop/Personal/Yo/Trabajos/MeLi/Prueba te\u0301cnica (5)/outputs/models/visual_feature_model_v1.npz",
+  "train_rows": 1000,
+  "validation_rows": 400,
+  "threshold": 0.91,
+  "metrics": {
+    "tp": 30,
+    "fp": 1,
+    "tn": 199,
+    "fn": 170,
+    "precision": 0.967741935483871,
+    "recall": 0.15,
+    "f1": 0.25974025974025977,
+    "accuracy": 0.5725
+  },
+  "details_csv": "outputs/reports/visual_model_validation_500.details.csv"
+}

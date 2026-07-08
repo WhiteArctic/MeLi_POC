@@ -1,0 +1,18 @@
+{
+  "model_path": "/Users/O001224/Desktop/Personal/Yo/Trabajos/MeLi/Prueba te\u0301cnica (5)/outputs/models/finetuned_mobilenet_v1.pt",
+  "device": "mps",
+  "train_rows": 40,
+  "validation_rows": 40,
+  "threshold": 0.73,
+  "metrics": {
+    "tp": 6,
+    "fp": 0,
+    "tn": 20,
+    "fn": 14,
+    "precision": 1.0,
+    "recall": 0.3,
+    "f1": 0.4615384615384615,
+    "accuracy": 0.65
+  },
+  "details_csv": "outputs/reports/finetuned_visual_smoke.details.csv"
+}

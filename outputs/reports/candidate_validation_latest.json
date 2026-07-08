@@ -1,0 +1,122 @@
+{
+  "overall": {
+    "tp": 42,
+    "fp": 2,
+    "tn": 48,
+    "fn": 8,
+    "precision": 0.9545454545454546,
+    "recall": 0.84,
+    "f1": 0.8936170212765958,
+    "accuracy": 0.9
+  },
+  "by_segment": {
+    "campaign_event": {
+      "tp": 6,
+      "fp": 0,
+      "tn": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0
+    },
+    "marketplace_badge_social_proof": {
+      "tp": 12,
+      "fp": 0,
+      "tn": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1": 0.923076923076923,
+      "accuracy": 0.8571428571428571
+    },
+    "negative_dense_nonpolicy_text": {
+      "tp": 0,
+      "fp": 2,
+      "tn": 12,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.8571428571428571
+    },
+    "negative_medium_nonpolicy_text": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 1.0
+    },
+    "negative_no_ocr_text": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 31,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 1.0
+    },
+    "other_legacy_label": {
+      "tp": 6,
+      "fp": 0,
+      "tn": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.8571428571428571,
+      "f1": 0.923076923076923,
+      "accuracy": 0.8571428571428571
+    },
+    "price_promotion": {
+      "tp": 10,
+      "fp": 0,
+      "tn": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1": 0.9090909090909091,
+      "accuracy": 0.8333333333333334
+    },
+    "quality_originality_claim": {
+      "tp": 1,
+      "fp": 0,
+      "tn": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "accuracy": 0.5
+    },
+    "trust_payment_platform_claim": {
+      "tp": 7,
+      "fp": 0,
+      "tn": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.7777777777777778,
+      "f1": 0.8750000000000001,
+      "accuracy": 0.7777777777777778
+    }
+  },
+  "dataset_csv": "outputs/datasets/validation.csv",
+  "evaluated_rows": 100,
+  "dedupe_group_key": "leakage_group_id",
+  "preset": "candidate",
+  "ocr_backend": "easyocr",
+  "visual_classifier": "mobilenet",
+  "visual_model_threshold": 0.91,
+  "visual_model_path": "/Users/O001224/Desktop/Personal/Yo/Trabajos/MeLi/Prueba técnica (5)/outputs/models/pretrained_visual_linear_v1.npz",
+  "failed_rows": 0,
+  "failure_rate": 0.0,
+  "latency_ms": {
+    "min": 150.63670798554085,
+    "median": 719.2387080140179,
+    "p95": 2447.566499991808,
+    "p99": 2792.672790994402,
+    "max": 3788.642166997306
+  },
+  "failed_rows_detail": []
+}

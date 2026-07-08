@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+.venv-ocr/
+dist/
+build/
+*.egg-info/
+tmp/
+.DS_Store
+outputs/image_cache/
+outputs/model_cache/
+
+# Local challenge data and generated artifacts.
+/anexo_1_dataset.csv
+/Reto*.pdf
+/*.pages
+/outputs/datasets/*.csv
+/outputs/golden_set/*.csv
+/outputs/models/*.pt
+/outputs/models/*.npz
+/outputs/reports/*.details.csv
+/outputs/documents/

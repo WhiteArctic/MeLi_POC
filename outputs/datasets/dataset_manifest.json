@@ -1,0 +1,21 @@
+{
+  "source_csv": "/Users/O001224/Desktop/Personal/Yo/Trabajos/MeLi/Prueba te\u0301cnica (5)/anexo_1_dataset.csv",
+  "golden_csv": "/Users/O001224/Desktop/Personal/Yo/Trabajos/MeLi/Prueba te\u0301cnica (5)/outputs/golden_set/golden_set_v1.csv",
+  "split_group_key": "leakage_group_id",
+  "ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test_internal": 0.15
+  },
+  "rows": {
+    "train": 377579,
+    "validation": 81255,
+    "test_internal": 81373
+  },
+  "groups": {
+    "train": 339189,
+    "validation": 72679,
+    "test_internal": 72690
+  },
+  "golden_groups_excluded_from_training": 5000
+}

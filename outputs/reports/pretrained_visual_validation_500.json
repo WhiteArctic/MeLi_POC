@@ -1,0 +1,18 @@
+{
+  "model_path": "/Users/O001224/Desktop/Personal/Yo/Trabajos/MeLi/Prueba te\u0301cnica (5)/outputs/models/pretrained_visual_linear_v1.npz",
+  "device": "mps",
+  "train_rows": 1000,
+  "validation_rows": 400,
+  "threshold": 0.99,
+  "metrics": {
+    "tp": 57,
+    "fp": 5,
+    "tn": 195,
+    "fn": 143,
+    "precision": 0.9193548387096774,
+    "recall": 0.285,
+    "f1": 0.43511450381679384,
+    "accuracy": 0.63
+  },
+  "details_csv": "outputs/reports/pretrained_visual_validation_500.details.csv"
+}

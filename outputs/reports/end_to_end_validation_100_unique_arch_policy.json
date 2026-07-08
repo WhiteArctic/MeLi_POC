@@ -1,0 +1,117 @@
+{
+  "overall": {
+    "tp": 28,
+    "fp": 1,
+    "tn": 49,
+    "fn": 22,
+    "precision": 0.9655172413793104,
+    "recall": 0.56,
+    "f1": 0.7088607594936709,
+    "accuracy": 0.77
+  },
+  "by_segment": {
+    "campaign_event": {
+      "tp": 1,
+      "fp": 0,
+      "tn": 0,
+      "fn": 5,
+      "precision": 1.0,
+      "recall": 0.16666666666666666,
+      "f1": 0.2857142857142857,
+      "accuracy": 0.16666666666666666
+    },
+    "marketplace_badge_social_proof": {
+      "tp": 9,
+      "fp": 0,
+      "tn": 0,
+      "fn": 5,
+      "precision": 1.0,
+      "recall": 0.6428571428571429,
+      "f1": 0.782608695652174,
+      "accuracy": 0.6428571428571429
+    },
+    "negative_dense_nonpolicy_text": {
+      "tp": 0,
+      "fp": 1,
+      "tn": 13,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9285714285714286
+    },
+    "negative_medium_nonpolicy_text": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 1.0
+    },
+    "negative_no_ocr_text": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 31,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 1.0
+    },
+    "other_legacy_label": {
+      "tp": 4,
+      "fp": 0,
+      "tn": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.5714285714285714,
+      "f1": 0.7272727272727273,
+      "accuracy": 0.5714285714285714
+    },
+    "price_promotion": {
+      "tp": 7,
+      "fp": 0,
+      "tn": 0,
+      "fn": 5,
+      "precision": 1.0,
+      "recall": 0.5833333333333334,
+      "f1": 0.7368421052631579,
+      "accuracy": 0.5833333333333334
+    },
+    "quality_originality_claim": {
+      "tp": 1,
+      "fp": 0,
+      "tn": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "accuracy": 0.5
+    },
+    "trust_payment_platform_claim": {
+      "tp": 6,
+      "fp": 0,
+      "tn": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8,
+      "accuracy": 0.6666666666666666
+    }
+  },
+  "dataset_csv": "outputs/datasets/validation.csv",
+  "evaluated_rows": 100,
+  "dedupe_group_key": "leakage_group_id",
+  "failed_rows": 0,
+  "failure_rate": 0.0,
+  "latency_ms": {
+    "min": 778.950750012882,
+    "median": 1762.429083493771,
+    "p95": 4169.978958001593,
+    "p99": 4411.0081660037395,
+    "max": 4433.234957978129
+  },
+  "failed_rows_detail": []
+}

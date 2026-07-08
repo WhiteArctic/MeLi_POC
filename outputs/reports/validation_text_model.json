@@ -1,0 +1,127 @@
+{
+  "overall": {
+    "tp": 4110,
+    "fp": 1747,
+    "tn": 73038,
+    "fn": 2360,
+    "precision": 0.7017244323032269,
+    "recall": 0.6352395672333848,
+    "f1": 0.666828912144074,
+    "accuracy": 0.9494554181281152
+  },
+  "by_segment": {
+    "campaign_event": {
+      "tp": 2,
+      "fp": 0,
+      "tn": 0,
+      "fn": 66,
+      "precision": 1.0,
+      "recall": 0.029411764705882353,
+      "f1": 0.05714285714285715,
+      "accuracy": 0.029411764705882353
+    },
+    "marketplace_badge_social_proof": {
+      "tp": 2040,
+      "fp": 0,
+      "tn": 0,
+      "fn": 1938,
+      "precision": 1.0,
+      "recall": 0.5128205128205128,
+      "f1": 0.6779661016949152,
+      "accuracy": 0.5128205128205128
+    },
+    "negative_dense_nonpolicy_text": {
+      "tp": 0,
+      "fp": 264,
+      "tn": 2875,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9158967824147818
+    },
+    "negative_medium_nonpolicy_text": {
+      "tp": 0,
+      "fp": 643,
+      "tn": 8885,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9325146935348446
+    },
+    "negative_no_ocr_text": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 38102,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 1.0
+    },
+    "negative_short_nonpolicy_text": {
+      "tp": 0,
+      "fp": 840,
+      "tn": 23176,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.9650233177881412
+    },
+    "other_legacy_label": {
+      "tp": 33,
+      "fp": 0,
+      "tn": 0,
+      "fn": 26,
+      "precision": 1.0,
+      "recall": 0.559322033898305,
+      "f1": 0.717391304347826,
+      "accuracy": 0.559322033898305
+    },
+    "price_promotion": {
+      "tp": 1820,
+      "fp": 0,
+      "tn": 0,
+      "fn": 297,
+      "precision": 1.0,
+      "recall": 0.8597071327350023,
+      "f1": 0.9245618491236982,
+      "accuracy": 0.8597071327350023
+    },
+    "quality_originality_claim": {
+      "tp": 51,
+      "fp": 0,
+      "tn": 0,
+      "fn": 8,
+      "precision": 1.0,
+      "recall": 0.864406779661017,
+      "f1": 0.9272727272727274,
+      "accuracy": 0.864406779661017
+    },
+    "shipping_promise": {
+      "tp": 120,
+      "fp": 0,
+      "tn": 0,
+      "fn": 14,
+      "precision": 1.0,
+      "recall": 0.8955223880597015,
+      "f1": 0.9448818897637796,
+      "accuracy": 0.8955223880597015
+    },
+    "trust_payment_platform_claim": {
+      "tp": 44,
+      "fp": 0,
+      "tn": 0,
+      "fn": 11,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.888888888888889,
+      "accuracy": 0.8
+    }
+  },
+  "dataset_csv": "outputs/datasets/validation.csv",
+  "mode": "model_only",
+  "threshold": 0.58
+}

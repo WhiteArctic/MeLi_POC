@@ -1,0 +1,35 @@
+[project]
+name = "meli-image-moderation-poc"
+version = "0.1.0"
+description = "POC for explainable image moderation with leakage-safe datasets."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "Pillow",
+]
+
+[project.optional-dependencies]
+strong-ocr = [
+  "easyocr",
+  "opencv-python-headless",
+]
+visual = [
+  "torch",
+  "torchvision",
+]
+candidate = [
+  "easyocr",
+  "opencv-python-headless",
+  "torch",
+  "torchvision",
+]
+clip = [
+  "open_clip_torch",
+  "torch",
+  "torchvision",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

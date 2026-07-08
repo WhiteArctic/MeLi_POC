@@ -1,0 +1,58 @@
+{
+  "version": "golden_set_v1",
+  "source_csv": "/Users/O001224/Desktop/Personal/Yo/Trabajos/MeLi/Prueba técnica (5)/anexo_1_dataset.csv",
+  "golden_csv": "/Users/O001224/Desktop/Personal/Yo/Trabajos/MeLi/Prueba técnica (5)/outputs/golden_set/golden_set_v1.csv",
+  "rows": 5000,
+  "positive_rows": 2500,
+  "negative_rows": 2500,
+  "leakage_policy": {
+    "group_key": "item_id parsed from picture_url, fallback picture_url",
+    "one_row_per_group": true,
+    "conflicting_picture_url_groups_excluded": 5,
+    "conflicting_item_groups_excluded": 5,
+    "golden_rows_marked_do_not_train": true,
+    "model_input_for_evaluation": [
+      "picture_url"
+    ],
+    "label_generation_columns_not_allowed_as_model_features": [
+      "infraction_detected",
+      "labels_detected",
+      "ocr_text",
+      "target_label",
+      "target_has_infraction"
+    ]
+  },
+  "sampling": {
+    "seed": "meli-image-moderation-golden-v1",
+    "positive_targets": {
+      "marketplace_badge_social_proof": 800,
+      "price_promotion": 800,
+      "shipping_promise": 350,
+      "campaign_event": 250,
+      "trust_payment_platform_claim": 150,
+      "quality_originality_claim": 100,
+      "other_legacy_label": 50
+    },
+    "negative_targets": {
+      "negative_no_ocr_text": 700,
+      "negative_short_nonpolicy_text": 700,
+      "negative_medium_nonpolicy_text": 600,
+      "negative_dense_nonpolicy_text": 500
+    },
+    "secondary_stratification": "site",
+    "excluded_from_acceptance": [
+      "legacy_positive_unlabeled",
+      "ambiguous_policy_keyword_negative",
+      "label_conflicts",
+      "duplicate groups beyond first selected item_id"
+    ]
+  },
+  "source_profile": {
+    "source_rows": 546909,
+    "source_positive_rows": 46909,
+    "source_negative_rows": 500000,
+    "unique_picture_urls": 489644,
+    "duplicate_picture_url_rows": 57265,
+    "ambiguous_policy_keyword_negative_rows_after_group_dedup": 81
+  }
+}

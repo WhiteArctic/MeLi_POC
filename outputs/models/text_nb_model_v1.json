@@ -1,0 +1,5 @@
+{
+  "model_type": "hashed_char_word_multinomial_naive_bayes",
+  "feature_count": 262144,
+  "alpha": 1.0
+}

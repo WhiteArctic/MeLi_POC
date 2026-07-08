@@ -1,0 +1,17 @@
+{
+  "model_path": "/Users/O001224/Desktop/Personal/Yo/Trabajos/MeLi/Prueba te\u0301cnica (5)/outputs/models/visual_feature_model_v1.npz",
+  "train_rows": 40,
+  "validation_rows": 40,
+  "threshold": 0.99,
+  "metrics": {
+    "tp": 3,
+    "fp": 2,
+    "tn": 18,
+    "fn": 17,
+    "precision": 0.6,
+    "recall": 0.15,
+    "f1": 0.24,
+    "accuracy": 0.525
+  },
+  "details_csv": "outputs/reports/visual_model_smoke.details.csv"
+}

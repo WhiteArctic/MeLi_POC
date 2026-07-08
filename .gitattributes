@@ -1,0 +1,6 @@
+* text=auto
+*.pages binary
+*.csv -diff
+*.npz binary
+*.pt binary
+*.pdf binary

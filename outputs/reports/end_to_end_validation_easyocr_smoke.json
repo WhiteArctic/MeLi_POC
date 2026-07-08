@@ -1,0 +1,58 @@
+{
+  "overall": {
+    "tp": 2,
+    "fp": 0,
+    "tn": 2,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "accuracy": 1.0
+  },
+  "by_segment": {
+    "campaign_event": {
+      "tp": 1,
+      "fp": 0,
+      "tn": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0
+    },
+    "negative_dense_nonpolicy_text": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 2,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 1.0
+    },
+    "trust_payment_platform_claim": {
+      "tp": 1,
+      "fp": 0,
+      "tn": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0
+    }
+  },
+  "dataset_csv": "outputs/datasets/validation.csv",
+  "evaluated_rows": 4,
+  "dedupe_group_key": "leakage_group_id",
+  "ocr_backend": "easyocr",
+  "failed_rows": 0,
+  "failure_rate": 0.0,
+  "latency_ms": {
+    "min": 680.8367500198074,
+    "median": 1395.5168749962468,
+    "p95": 6470.334332989296,
+    "p99": 6470.334332989296,
+    "max": 6470.334332989296
+  },
+  "failed_rows_detail": []
+}

@@ -1,0 +1,5 @@
+{
+  "model_type": "visual_feature_logistic_regression",
+  "feature_count": 134,
+  "threshold": 0.91
+}

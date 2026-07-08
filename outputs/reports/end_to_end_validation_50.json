@@ -1,0 +1,96 @@
+{
+  "overall": {
+    "tp": 9,
+    "fp": 0,
+    "tn": 25,
+    "fn": 16,
+    "precision": 1.0,
+    "recall": 0.36,
+    "f1": 0.5294117647058824,
+    "accuracy": 0.68
+  },
+  "by_segment": {
+    "campaign_event": {
+      "tp": 1,
+      "fp": 0,
+      "tn": 0,
+      "fn": 4,
+      "precision": 1.0,
+      "recall": 0.2,
+      "f1": 0.33333333333333337,
+      "accuracy": 0.2
+    },
+    "negative_dense_nonpolicy_text": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 6,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 1.0
+    },
+    "negative_no_ocr_text": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 19,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 1.0
+    },
+    "other_legacy_label": {
+      "tp": 1,
+      "fp": 0,
+      "tn": 0,
+      "fn": 6,
+      "precision": 1.0,
+      "recall": 0.14285714285714285,
+      "f1": 0.25,
+      "accuracy": 0.14285714285714285
+    },
+    "price_promotion": {
+      "tp": 3,
+      "fp": 0,
+      "tn": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571,
+      "accuracy": 0.75
+    },
+    "quality_originality_claim": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.0
+    },
+    "trust_payment_platform_claim": {
+      "tp": 4,
+      "fp": 0,
+      "tn": 0,
+      "fn": 4,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "accuracy": 0.5
+    }
+  },
+  "dataset_csv": "outputs/datasets/validation.csv",
+  "evaluated_rows": 50,
+  "failed_rows": 0,
+  "failure_rate": 0.0,
+  "latency_ms": {
+    "min": 340.7964579819236,
+    "median": 645.8879584970418,
+    "p95": 1250.278708001133,
+    "p99": 1400.9808329865336,
+    "max": 1400.9808329865336
+  },
+  "failed_rows_detail": []
+}
